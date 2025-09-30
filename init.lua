@@ -928,6 +928,15 @@ require('lazy').setup({
 
 require('toggleterm').setup {
   insert_mappings = true,
+  highlight = {
+    Normal = {
+      link = 'Normal',
+    },
+    NormalFloat = {
+      link = 'Normal',
+    },
+  },
+  shading_factor = 0,
 }
 vim.keymap.set('n', '<leader>tf', '<cmd>ToggleTerm 1 direction=float<cr>', { desc = 'Toggle floating terminal' })
 vim.keymap.set('n', '<leader>tv', '<cmd>ToggleTerm 2 direction=vertical size=40<cr>', { desc = 'Toggle vertical terminal' })
