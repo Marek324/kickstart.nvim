@@ -926,5 +926,14 @@ require('lazy').setup({
   },
 })
 
+require('toggleterm').setup {
+  insert_mappings = true,
+}
+vim.keymap.set('n', '<leader>tf', '<cmd>ToggleTerm 1 direction=float<cr>', { desc = 'Toggle floating terminal' })
+vim.keymap.set('n', '<leader>tv', '<cmd>ToggleTerm 2 direction=vertical size=40<cr>', { desc = 'Toggle vertical terminal' })
+vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm 3 direction=tab<cr>', { desc = 'Toggle tab terminal' })
+vim.keymap.set('t', '<leader>tf', '<cmd>ToggleTerm 1<cr>', { desc = 'Toggle floating terminal' })
+vim.keymap.set('t', '<leader>tv', '<cmd>ToggleTerm 2<cr>', { desc = 'Toggle vertical terminal' })
+vim.keymap.set('t', '<leader>tt', '<cmd>ToggleTerm 3<cr>', { desc = 'Toggle tab terminal' })
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
