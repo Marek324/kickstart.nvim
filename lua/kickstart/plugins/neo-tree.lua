@@ -22,6 +22,9 @@ return {
           ['h'] = 'close_node',
         },
       },
+      filtered_items = {
+        visible = true,
+      },
     },
   },
 }
