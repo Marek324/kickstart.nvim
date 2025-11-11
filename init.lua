@@ -946,10 +946,10 @@ vim.keymap.set('t', '<leader>tv', '<cmd>ToggleTerm 2<cr>', { desc = 'Toggle vert
 vim.keymap.set('t', '<leader>tt', '<cmd>ToggleTerm 3<cr>', { desc = 'Toggle tab terminal' })
 
 require('autoclose').setup()
-require('oil').setup({
+require('oil').setup {
   view_options = {
     show_hidden = true,
-  }
-})
+  },
+}
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
